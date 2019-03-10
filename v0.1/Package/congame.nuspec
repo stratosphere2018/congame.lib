@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>congame</id>
+    <version>0.1.0</version>
+    <authors>o0-kettle-0o</authors>
+    <owners>o0-kettle-0o</owners>
+    <!--
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>コンソールでのゲーム開発を援助するライブラリです。</description>
+    <summary>
+      conioex.hに苦しめられる人達を少しでも減らすために。
+    </summary>
+    <releaseNotes>
+      v0.1
+      '19-03-10 キー入力検知を追加
+      '19-03-10 リリーステスト
+    </releaseNotes>
+    <copyright>Copyright(c) 2019</copyright>
+    <tags>console game cpp c++</tags>
+  </metadata>
+</package>

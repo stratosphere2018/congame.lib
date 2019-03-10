@@ -22,6 +22,7 @@
   <ItemGroup>
     <None Include="Package\build\native\congame.props" />
     <None Include="Package\build\native\congame.targets" />
+    <None Include="Package\congame.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Package\build\native\include\congame.h">
