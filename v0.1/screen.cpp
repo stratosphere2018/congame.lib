@@ -1,4 +1,4 @@
-#include "screen.h"
+#include "Package\build\native\include\congame.h"
 
 namespace Congame {
 #define OUTPUT_HANDLE GetStdHandle(STD_OUTPUT_HANDLE)

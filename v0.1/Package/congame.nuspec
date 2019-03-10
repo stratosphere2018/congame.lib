@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>congame</id>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
     <authors>o0-kettle-0o</authors>
     <owners>o0-kettle-0o</owners>
     <!--
@@ -17,6 +17,7 @@
     </summary>
     <releaseNotes>
       v0.1
+      '19-03-10 パッケージに正常にインクルードされていない部分を修正
       '19-03-10 パッケージ化ショートカット作成
       '19-03-10 プロパティ構造体追加
       '19-03-10 ベクトル構造体追加

@@ -1,4 +1,4 @@
-#include "input.h"
+#include "Package\build\native\include\congame.h"
 
 #include <stdio.h>
 

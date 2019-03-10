@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="congame.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="random.cpp" />
     <ClCompile Include="screen.cpp" />
@@ -31,12 +30,7 @@
     <None Include="Package\congame.nuspec" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="input.h" />
     <ClInclude Include="Package\build\native\include\congame.h" />
-    <ClInclude Include="property.h" />
-    <ClInclude Include="random.h" />
-    <ClInclude Include="screen.h" />
-    <ClInclude Include="vector2.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -89,7 +83,9 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
