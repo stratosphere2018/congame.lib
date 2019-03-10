@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\congame.0.1.1\build\native\congame.props" Condition="Exists('..\packages\congame.0.1.1\build\native\congame.props')" />
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -19,40 +20,23 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="congame.cpp" />
-    <ClCompile Include="input.cpp" />
-    <ClCompile Include="random.cpp" />
-    <ClCompile Include="screen.cpp" />
-    <ClCompile Include="vector2.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Package\build\native\congame.props" />
-    <None Include="Package\build\native\congame.targets" />
-    <None Include="Package\congame.nuspec" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="input.h" />
-    <ClInclude Include="Package\build\native\include\congame.h" />
-    <ClInclude Include="property.h" />
-    <ClInclude Include="random.h" />
-    <ClInclude Include="screen.h" />
-    <ClInclude Include="vector2.h" />
+    <None Include="packages.config" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{AA4413C5-6437-4645-AA64-F004948EC8FD}</ProjectGuid>
-    <RootNamespace>v01a</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <ProjectGuid>{8497E2E9-515A-4C36-BB80-DC8593065CEE}</ProjectGuid>
+    <RootNamespace>testProj</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
@@ -136,5 +120,13 @@
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\congame.0.1.1\build\native\congame.targets" Condition="Exists('..\packages\congame.0.1.1\build\native\congame.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\congame.0.1.1\build\native\congame.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\congame.0.1.1\build\native\congame.props'))" />
+    <Error Condition="!Exists('..\packages\congame.0.1.1\build\native\congame.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\congame.0.1.1\build\native\congame.targets'))" />
+  </Target>
 </Project>

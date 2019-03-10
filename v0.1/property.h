@@ -1,11 +1,9 @@
-#pragma once
 #ifndef _CONGAME_PROPERTY
 #define _CONGAME_PROPERTY
 
 namespace Congame {
+	// something like a property in c#
 	template<class T> struct Property {
-		T& r;
-
 		operator T() {
 			return get();
 		}
@@ -27,11 +25,12 @@ namespace Congame {
 			constructor(DefaultGetter, DefaultSetter);
 		}
 		void constructor(T(*getter)(), T(*setter)(T)) {
-			get = getter;
-			set = setter;
+			*get = *getter;
+			*set = *setter;
 		}
 
 	private:
+		T& r;
 		T(*get)();
 		T(*set)(T v);
 
@@ -42,9 +41,9 @@ namespace Congame {
 			return val;
 		}
 	};
-	template<class T> struct ReadOnly {
-		T& r;
 
+	// a readonly property
+	template<class T> struct ReadOnly {
 		operator T() {
 			return get();
 		}
@@ -52,9 +51,16 @@ namespace Congame {
 		ReadOnly(T(*func)()) {
 			*get = *func;
 		}
+		ReadOnly() {
+			*get = DefaultGetter;
+		}
 
 	private:
+		T& r;
 		T(*get)();
+		T DefaultGetter() {
+			return r;
+		}
 	};
 }
 

@@ -1,4 +1,3 @@
-#pragma once
 #ifndef _CONGAME_RANDOM	// include guard
 #define _CONGAME_RANDOM
 

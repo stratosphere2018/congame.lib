@@ -65,7 +65,7 @@ namespace Congame {
 		return (Vector2)normalized * val;
 	}
 	Vector2 Vector2::operator %=(int val) {
-		return (*this = *this % val);
+		return (*this = *this % (float)val);
 	}
 	float Vector2::operator &(Vector2 vector) {
 		return X * vector.X + Y * vector.Y;
@@ -96,6 +96,6 @@ namespace Congame {
 		return (*this %= 1);
 	}
 	float Vector2::Angle(Vector2 vector) {
-		return acos(*this * vector);
+		return acosf(*this * vector);
 	}
 }

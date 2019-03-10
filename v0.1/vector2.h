@@ -1,4 +1,3 @@
-#pragma once
 #ifndef _CONGAME_VECTOR2
 #define _CONGAME_VECTOR2
 
