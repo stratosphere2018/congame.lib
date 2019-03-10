@@ -1,6 +1,6 @@
 # congame
 
-――conioex.h に苦しめられる人たちを少しでも減らすために――
+　―― conioex.h に苦しめられる人たちを少しでも減らすために ――
 
 <!--
 If able to translate into English or other languages, we request your help.
@@ -27,7 +27,7 @@ If able to translate into English or other languages, we request your help.
 
 # Licence
 
-This package is released under the MIT License, see LICENSE.
+This package is released under the MIT License, see [LICENSE](https://github.com/stratosphere2018/congame.lib/blob/master/LICENSE).
 
 このパッケージはMITライセンスに則って公開されています。
 
