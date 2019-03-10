@@ -5,7 +5,7 @@ congame.h/congame.lib
 制作：Stratosphere
 (https://github.com/stratosphere2018)
 gitリポジトリ：https://github.com/stratosphere2018/congame.lib
-バージョン：1.1.0
+バージョン：1.1.1
 */
 
 #ifndef _CONGAME
@@ -16,9 +16,9 @@ gitリポジトリ：https://github.com/stratosphere2018/congame.lib
 namespace Congame {
 
 #ifdef _DEBUG
-#pragma comment(lib,"../lib/v0.1_d.lib")
+#pragma comment(lib,"../lib/v1_d.lib")
 #else
-#pragma comment(lib,"../lib/v0.1.lib")
+#pragma comment(lib,"../lib/v1.lib")
 #endif // _DEBUG
 
 #ifndef _CONGAME_INPUT	// include guard
