@@ -15,26 +15,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="input.cpp">
+    <ClCompile Include="..\v0.1\input.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="random.cpp">
+    <ClCompile Include="..\v0.1\random.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="vector2.cpp">
+    <ClCompile Include="..\v0.1\screen.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="screen.cpp">
+    <ClCompile Include="..\v0.1\vector2.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Package\build\native\congame.props" />
-    <None Include="Package\build\native\congame.targets" />
-    <None Include="Package\congame.nuspec" />
+    <None Include="..\v0.1\Package\congame.nuspec" />
+    <None Include="..\v0.1\Package\build\native\congame.props" />
+    <None Include="..\v0.1\Package\build\native\congame.targets" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Package\build\native\include\congame.h">
+    <ClInclude Include="..\v0.1\Package\build\native\include\congame.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
