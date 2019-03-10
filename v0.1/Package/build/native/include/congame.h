@@ -5,7 +5,7 @@ congame.h/congame.lib
 制作：Stratosphere
 (https://github.com/stratosphere2018)
 gitリポジトリ：https://github.com/stratosphere2018/congame.lib
-バージョン：0.1.2
+バージョン：1.1.0
 */
 
 #ifndef _CONGAME
