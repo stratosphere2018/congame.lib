@@ -1,4 +1,4 @@
-#include "Package\build\native\include\input.h"
+#include "input.h"
 
 #include <stdio.h>
 

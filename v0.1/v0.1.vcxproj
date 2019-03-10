@@ -19,7 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="congame.cpp" />
     <ClCompile Include="input.cpp" />
+    <ClCompile Include="random.cpp" />
+    <ClCompile Include="vector2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Package\build\native\congame.props" />
@@ -27,8 +30,11 @@
     <None Include="Package\congame.nuspec" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="input.h" />
     <ClInclude Include="Package\build\native\include\congame.h" />
-    <ClInclude Include="Package\build\native\include\input.h" />
+    <ClInclude Include="property.h" />
+    <ClInclude Include="random.h" />
+    <ClInclude Include="vector2.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

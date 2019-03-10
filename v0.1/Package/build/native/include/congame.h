@@ -1,7 +1,6 @@
 #pragma once
 #ifndef _CONGAME
-
-#include "input.h"
+#define _CONGAME
 
 #ifdef _DEBUG
 #pragma comment(lib,"../lib/v0.1_d.lib")
