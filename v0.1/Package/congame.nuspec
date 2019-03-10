@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>congame</id>
-    <version>0.1.0</version>
+    <version>1.1.0</version>
     <authors>o0-kettle-0o</authors>
     <owners>o0-kettle-0o</owners>
     <!--
@@ -16,7 +16,16 @@
       conioex.hに苦しめられる人達を少しでも減らすために。
     </summary>
     <releaseNotes>
+      v1.1
+      '19-03-10 スクリーン関数追加
+      v1.0
+      '19-03-10 初版
       v0.1
+      '19-03-10 パッケージに正常にインクルードされていない部分を修正
+      '19-03-10 パッケージ化ショートカット作成
+      '19-03-10 プロパティ構造体追加
+      '19-03-10 ベクトル構造体追加
+      '19-03-10 ランダム関数追加
       '19-03-10 キー入力検知を追加
       '19-03-10 リリーステスト
     </releaseNotes>
